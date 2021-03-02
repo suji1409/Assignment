@@ -1,4 +1,4 @@
-package training.day2;
+package assessments.day2;
 
 public class ArrayRandomCar {
     public static void main(String[] args) {
