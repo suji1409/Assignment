@@ -1,6 +1,4 @@
-package day1;
-
-import java.util.Arrays;
+package assessments.day1;
 
 public class PrintAscci {
     public static void main(String[] args) {

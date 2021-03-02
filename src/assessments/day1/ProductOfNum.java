@@ -1,4 +1,4 @@
-package day1;
+package assessments.day1;
 
 public class ProductOfNum {
     public static void main(String[] args) {

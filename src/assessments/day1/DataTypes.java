@@ -1,6 +1,4 @@
-package day1;
-
-import java.util.Scanner;
+package assessments.day1;
 
 public class DataTypes {
     public static void main(String[] args) {
