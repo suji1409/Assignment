@@ -1,4 +1,4 @@
-package assignment;
+package day1;
 
 public class Faren_Cel_Conv {
     public static void main(String[] args) {

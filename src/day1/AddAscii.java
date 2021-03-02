@@ -1,4 +1,4 @@
-package assignment;
+package day1;
 
 public class AddAscii {
     public static void main(String[] args) {

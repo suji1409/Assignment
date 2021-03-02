@@ -1,4 +1,4 @@
-package assignment;
+package day1;
 
 public class AreaOfRect {
     public static void main(String[] args) {

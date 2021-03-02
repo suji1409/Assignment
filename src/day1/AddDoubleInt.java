@@ -1,4 +1,4 @@
-package assignment;
+package day1;
 
 public class AddDoubleInt {
     public static void main(String[] args) {
