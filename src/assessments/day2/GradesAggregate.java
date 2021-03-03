@@ -23,7 +23,7 @@ public class GradesAggregate {
         {
             for (int j = i + 1; j < grades.length; j++)
             {
-                if (grades[i] > grades[j])
+                if (grades[i] < grades[j])
                 {
                     temp = grades[i];
                     grades[i] = grades[j];
