@@ -1,7 +1,7 @@
 package assessments.day3;
 
 public class PG_Degree extends Degree{
-
+    @Override
     public void getDegree(){
         System.out.println("Im an PostGraduate");
     }

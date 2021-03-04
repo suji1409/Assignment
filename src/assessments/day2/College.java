@@ -1,18 +1,46 @@
 package assessments.day2;
 
-public class College {
+public class College{
+Engg eng;
+Arts arts;
 
-    public String lab;
-    public int music_room;
-    public int Books;
-
-    public void engg(){
-
-
+    public Engg getEng() {
+        return eng;
     }
 
-    public void arts(){
-
+    public void setEng(Engg eng) {
+        this.eng = eng;
     }
 
+    public Arts getArts() {
+        return arts;
+    }
+
+    public void setArts(Arts arts) {
+        this.arts = arts;
+    }
+}
+
+class Engg extends Library{
+    private String lab;
+
+    public String getLab() {
+        return lab;
+    }
+
+    public void setLab(String lab) {
+        this.lab = lab;
+    }
+}
+
+class Arts extends Library{
+    private String music;
+
+    public String getMusic() {
+        return music;
+    }
+
+    public void setMusic(String music) {
+        this.music = music;
+    }
 }
