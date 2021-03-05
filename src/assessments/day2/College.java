@@ -24,6 +24,9 @@ Arts arts;
 class Engg extends Library{
     private String lab;
 
+
+
+
     public String getLab() {
         return lab;
     }
@@ -34,6 +37,8 @@ class Engg extends Library{
 }
 
 class Arts extends Library{
+
+
     private String music;
 
     public String getMusic() {

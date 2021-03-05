@@ -1,16 +1,27 @@
 package assessments.day2;
 
+import java.util.List;
+
 public class Library {
-Books allbooks;
+List<Books> allbooks;
 Furniture furn;
 Staff staff;
 
-    public Books getAllbooks() {
+    public Library(List<Books> allbooks, Furniture furn, Staff staff) {
+        this.allbooks =  allbooks;
+        this.furn = furn;
+        this.staff = staff;
+    }
+
+    public Library() {
+    }
+
+    public List<Books> getAllbooks() {
         return allbooks;
     }
 
     public void setAllbooks(Books allbooks) {
-        this.allbooks = allbooks;
+        this.allbooks = (List<Books>) allbooks;
     }
 
     public Furniture getFurn() {
