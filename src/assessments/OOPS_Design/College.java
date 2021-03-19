@@ -1,51 +1,48 @@
 package assessments.OOPS_Design;
 
-public class College{
-Engg eng;
-Arts arts;
+import java.util.List;
 
-    public Engg getEng() {
-        return eng;
+public class College {
+
+    public static void main(String[] args) {
+
+
+        int NoOfBooksCollege;
+        int NoOfStaffsCollege;
+        int NoOfBooksRented;
+
+        ArtsDepartment Arts = new ArtsDepartment();
+        Library ArtsLibrary = Arts.setLibrary();
+
+        EnggDepartment Engg = new EnggDepartment();
+        Library LibraryEngg = Engg.setLibrary();
+
+        NoOfBooksCollege = ArtsLibrary.getNoOfBooksInLibrary()+ LibraryEngg.getNoOfBooksInLibrary();
+        NoOfStaffsCollege = ArtsLibrary.getNoOfStaffInLibrary() + LibraryEngg.getNoOfStaffInLibrary();
+        NoOfBooksRented = ArtsLibrary.getNoOfBooksRented() + LibraryEngg.getNoOfBooksRented();
+        int NoOfFurniture = ArtsLibrary.getNoOfChairs()+LibraryEngg.getNoOfChairs();
+
+        System.out.println("Total number of books in Library = "+ NoOfBooksCollege);
+        System.out.println("Total number of Staffs in College = "+ NoOfStaffsCollege);
+        System.out.println("Total number of books rented = "+ Books.NoOfBooksRented);
+        System.out.println("Total number of chairs = "+Furniture.NoOfChairs);
+
+        Staff ArtsEldestStaff = Arts.getEldestStaffDetails(Arts.staffArrayList);
+
+        Staff EnggEldestStaff = Engg.getEldestStaffDetails(Engg.staffArrayList);
+
+        if(ArtsEldestStaff.getStaffAge()> EnggEldestStaff.getStaffAge()) {
+            System.out.println("Eldest Staff in College is from Arts Department and the details are " + ArtsEldestStaff.getStaffFirstName() + ArtsEldestStaff.getStaffLastName() + ArtsEldestStaff.getStaffAge());
+        }
+            else{
+            System.out.println("Eldest Staff in College is from Engineering Department and the details are "+ EnggEldestStaff.getStaffFirstName() + EnggEldestStaff.getStaffLastName() + EnggEldestStaff.getStaffAge());
+
+        }
+
     }
 
-    public void setEng(Engg eng) {
-        this.eng = eng;
-    }
-
-    public Arts getArts() {
-        return arts;
-    }
-
-    public void setArts(Arts arts) {
-        this.arts = arts;
-    }
-}
-
-class Engg extends Library{
-    private String lab;
 
 
 
 
-    public String getLab() {
-        return lab;
-    }
-
-    public void setLab(String lab) {
-        this.lab = lab;
-    }
-}
-
-class Arts extends Library{
-
-
-    private String music;
-
-    public String getMusic() {
-        return music;
-    }
-
-    public void setMusic(String music) {
-        this.music = music;
-    }
 }
